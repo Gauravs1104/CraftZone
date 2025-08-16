@@ -129,7 +129,7 @@ const ContactForm = () => {
       <button type="submit" className="btn">Send</button>
 
       {status === "success" && (
-        <p className="text-green-600 mt-2">✅ Form submitted successfully!</p>
+        <p className="text-green-600 mt-2">✅ Thankyou For Contacting Us We Contact You Via Email & Whatsapp</p>
       )}
       {status === "error" && (
         <p className="text-red-600 mt-2">❌ Error submitting form. Try again.</p>

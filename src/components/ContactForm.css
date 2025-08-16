@@ -1,0 +1,98 @@
+.contact-form {
+  max-width: 40rem; /* Increased max-width using rem */
+  margin: 2rem auto; /* Added margin for spacing using rem */
+  padding: 2rem; /* Increased padding using rem */
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.75rem; /* More rounded corners */
+  box-shadow: 0 0.3rem 0.75rem rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+.form-group {
+  margin-bottom: 1.5rem; /* Increased margin-bottom using rem */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem; /* Increased margin-bottom using rem */
+  font-weight: 600; /* Bolder font weight */
+  color: #333; /* Darker label color */
+  font-size: 1rem; /* Consistent font size */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; /* Full width */
+  padding: 0.8rem; /* Increased padding using rem */
+  border: 1px solid #ccc;
+  border-radius: 0.4rem; /* More rounded input fields */
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif; /* Consistent font family */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff6f61; /* Highlight on focus */
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(255, 111, 97, 0.2); /* Subtle focus shadow */
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 8rem; /* Increased min-height using rem */
+}
+
+.contact-form button {
+  /* Rely on global .btn class from index.css */
+  width: 100%; /* Make button full width */
+}
+
+/* Responsive adjustments for contact form */
+@media (max-width: 768px) {
+  .contact-form {
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+  }
+
+  .form-group label {
+    font-size: 0.95rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.6rem;
+  }
+}
+
+/* Specific styling for file input */
+.form-group input[type="file"] {
+  padding: 0.8rem; /* Match other inputs */
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  background-color: #f9f9f9; /* Slightly different background for file input */
+  cursor: pointer;
+}
+
+.form-group input[type="file"]:focus {
+  border-color: #ff6f61;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(255, 111, 97, 0.2);
+}

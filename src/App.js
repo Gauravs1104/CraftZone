@@ -32,7 +32,7 @@ function App() {
             <a href="https://www.instagram.com/shivanihandmade?igsh=cGVwcmUzY2o5NTJx" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i> 
             </a>
-            <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+            <a href="#" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook"></i> 
             </a>
           </div>

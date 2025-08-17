@@ -26,10 +26,10 @@ function App() {
         <footer>
           <p>&copy; {new Date().getFullYear()} My Craft Store. All rights reserved.</p>
           <div className="social-links">
-            <a href="https://www.youtube.com/yourchannel" target="_blank" rel="noopener noreferrer">
+            <a href="https://youtube.com/@shivanitiwari-t9s?si=BODOigWjuTkjtGiB" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-youtube"></i> YouTube
             </a>
-            <a href="https://www.instagram.com/__gaurav___11_04/profilecard/?igsh=MTRza2w2dWJ2aTZvbA==" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/shivanihandmade?igsh=cGVwcmUzY2o5NTJx" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i> Instagram
             </a>
             <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">

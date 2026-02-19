@@ -1,0 +1,150 @@
+.navbar {
+  background: linear-gradient(90deg, #0c0b3b 0%, #1a1a40 100%); /* Dark blue gradient */
+  color: white;
+  padding: 15px 30px; /* Increased padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+  transition: all 0.3s ease;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 2em; /* Slightly larger font */
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px; /* Add some letter spacing */
+}
+
+.navbar-brand a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand a:hover {
+  color: #ff8c00; /* Brighter orange on hover for brand */
+}
+
+.hamburger-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger-icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hamburger-icon .bar {
+  width: 30px; /* Slightly wider bars */
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.hamburger-icon .bar.open:nth-child(1) {
+  transform: rotate(-45deg) translate(-7px, 7px); /* Adjusted transform */
+}
+
+.hamburger-icon .bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon .bar.open:nth-child(3) {
+  transform: rotate(45deg) translate(-7px, -7px); /* Adjusted transform */
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: all 0.4s ease-in-out; /* Smoother transition */
+}
+
+.nav-item {
+  margin-left: 30px; /* Increased spacing */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600; /* Bolder font weight */
+  padding: 10px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px; /* Thicker underline */
+  bottom: -5px; /* Lowered underline */
+  left: 0;
+  background-color: #ff6f61; /* Vibrant orange accent */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff6f61; /* Vibrant orange on hover */
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: flex;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Adjusted based on new padding */
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #0c0b3b 0%, #1a1a40 100%); /* Match navbar gradient */
+    border-top: 1px solid rgba(255, 255, 255, 0.15); /* Slightly stronger border */
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Shadow for dropdown */
+  }
+
+  .nav-menu.open {
+    height: auto;
+    opacity: 1;
+    pointer-events: all;
+    padding-bottom: 15px; /* More padding */
+  }
+
+  .nav-item {
+    margin: 0;
+    text-align: center;
+    padding: 12px 0; /* More padding for mobile links */
+  }
+
+  .nav-link {
+    padding: 10px 0;
+    font-size: 1.2em; /* Larger font for mobile links */
+  }
+
+  .nav-link::after {
+    height: 2px; /* Thicker underline on mobile */
+    bottom: -3px;
+  }
+}
+

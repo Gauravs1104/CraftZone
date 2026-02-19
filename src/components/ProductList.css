@@ -1,0 +1,123 @@
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr; /* Default: 1 column for mobile */
+  gap: 2rem; /* Increased gap for better spacing */
+  padding: 1.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.75rem; /* More rounded corners */
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 0.3rem 0.75rem rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space */
+}
+
+.product-card:hover {
+  transform: translateY(-0.5rem); /* Lift effect on hover */
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25); /* More pronounced shadow */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 15rem; /* Increased image height using rem */
+  object-fit: cover;
+  border-radius: 0.6rem; /* More rounded image corners */
+  margin-bottom: 1rem;
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+.product-card h3 {
+  margin-top: 0;
+  font-size: 1.3rem; /* Larger font size for titles */
+  color: #0c0b3b; /* Dark blue from navbar for titles */
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  font-size: 0.95rem; /* Slightly larger font size for description */
+  color: #666;
+  line-height: 1.5;
+  flex-grow: 1; /* Allow description to take available space */
+  margin-bottom: 1rem; /* Space before button */
+}
+
+.product-card .btn {
+  margin-top: auto; /* Push button to the bottom */
+  width: 100%; /* Full width button */
+}
+
+/* Responsive adjustments for product list */
+
+/* Small devices (e.g., phones in landscape, small tablets) */
+@media (min-width: 481px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .product-card {
+    padding: 1rem;
+  }
+
+  .product-card img {
+    height: 12rem;
+  }
+
+  .product-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 769px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .product-card img {
+    height: 15rem;
+  }
+
+  .product-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .product-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1200px) {
+  .product-list {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .product-card img {
+    height: 16rem;
+  }
+}

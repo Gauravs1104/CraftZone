@@ -12,7 +12,7 @@ const ContactPage = () => {
         <h3>Find Us Here</h3>
         {/* Placeholder for Google Map Embed */}
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d261.05961400914174!2d85.4970221586818!3d26.047981949364264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDAyJzUyLjkiTiA4NcKwMjknNDkuNyJF!5e1!3m2!1sen!2sin!4v1755246122229!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6156.529557667359!2d85.81924299999999!3d20.354991599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1771499613824!5m2!1sen!2sin"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"

@@ -43,7 +43,7 @@ const ContactForm = () => {
 
       try {
         const response = await fetch(
-          "https://script.google.com/macros/s/AKfycbw2T6SNoPPKSpYuA5WigSDi-VrHPuu9AvrremXtezQDm2zGw370S7dZfjWBTRjl8De4/exec",
+          "https://script.google.com/macros/s/AKfycbwJRHP6z04LWpbEVOzyYEfD2H1p39Hp2jDhgHULT9Lh3Vxhduz9hNPmHeqWeSxY2W2L/exec",
           {
             method: "POST",
             body: JSON.stringify(payload),
